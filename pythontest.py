@@ -4,7 +4,7 @@ import socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # bind the socket to a public host and a port
-server_socket.bind(('0.0.0.0', 5000))
+server_socket.bind(('0.0.0.0', 5001))
 
 # become a server socket
 server_socket.listen(5)
